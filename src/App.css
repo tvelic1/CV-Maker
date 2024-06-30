@@ -1,38 +1,247 @@
-.App {
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f4f4f4;
+  padding: 40px;
+  min-height: 100vh;
+}
+
+.container {
+  display: flex;
+  max-width: 1200px;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  margin: 20px 0;
+}
+
+.sidebar {
+  width: 35%;
+  background-color: #2c3e50;
+  color: white;
+  padding: 30px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.sidebar img {
+  width: 200px;
+  height: 250px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  object-fit: cover;
+  border: 4px solid #fff;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.sidebar h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #ecf0f1;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.sidebar .personal-info,
+.sidebar .interests {
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.sidebar .interests ul {
+  margin-left: -6px;
+}
+.sidebar .interests ul li {
+  margin-top: 15px;
+}
+
+.sidebar .personal-info p,
+.sidebar .interests p {
+  margin-bottom: 10px;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.sidebar .interests ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.sidebar .interests li {
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+.sidebar .interests h3 {
+  margin-bottom: 10px;
+  margin-top:30px;
+}
+
+.main-content {
+  width: 65%;
+  padding: 30px;
+}
+
+.main-content h1 {
+  margin-bottom: 20px;
+  color: #101011;
+  font-size: 32px;
+}
+
+.main-content h2 {
+  margin-top: 30px;
+  margin-bottom: 10px;
+  color: #0a0b0b;
+  font-size: 24px;
+  border-bottom: 2px solid #ecf0f1;
+  padding-bottom: 10px;
+}
+.page-break {
+  page-break-before: always; /* or page-break-after: always; */
+}
+
+.main-content p {
+  margin-bottom: 20px;
+  line-height: 1.8;
+  font-size: 16px;
+  color: #101011;
+}
+
+.skills .skill {
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #101011;
   display: flex;
-  flex-direction: column;
+  align-items: center;
+}
+
+.skills .skill strong {
+  flex: 1;
+}
+
+.stars {
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-right: 150px;
 }
 
-.App-link {
-  color: #61dafb;
+.star {
+  font-size: 25px;
+  color: #2c3e50;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.star.empty {
+  color: #ccc;
+}
+
+.projects .project {
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: #ecf0f1;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.4s ease-in-out;
+
+}
+.project:hover{
+  transform: scale(1.02);
+  background-color: #dfeaf5;
+
+}
+.projects .project1:hover {
+  transform: scale(1.02);
+  background-color: #dfeaf5;
+}
+
+.projects .project h3 {
+  margin-bottom: 10px;
+  color: #101011;
+  font-size: 20px;
+}
+
+.projects .project p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #101011;
+}
+
+.projects .project1 {
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: #ecf0f1;
+  border-radius: 10px;
+  page-break-before: always;
+  cursor: pointer;
+  transition: transform 0.4s ease-in-out;
+
+}
+
+.projects .project1 h3 {
+  margin-bottom: 10px;
+  color: #101011;
+  font-size: 20px;
+}
+
+.projects .project1 p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #101011;
+}
+.icon-title {
+  display: flex;
+  align-items: center;
+}
+.icon-title i {
+  width: 20px;
+  text-align: center;
+}
+.icon-title strong {
+  display: inline-block;
+  margin-right: 5px; /* Add space after the icon */
+}
+.interests-icon-title {
+  display: flex;
+  align-items: center;
+}
+.interests-icon-title i {
+  width: 30px;
+  text-align: center;
+}
+
+@media (max-width: 1068px) {
+  .container {
+    flex-direction: column;
+    padding: 10px;
   }
-  to {
-    transform: rotate(360deg);
+
+  .sidebar {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .main-content {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .projects .project, .projects .project1 {
+    margin-bottom: 20px;
+  }
+
+  .skills .skill {
+    display: flex;
+    justify-content: space-between;
+  }
+  .stars {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 50px;
   }
 }
