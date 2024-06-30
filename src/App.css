@@ -203,7 +203,7 @@ body {
 }
 .icon-title strong {
   display: inline-block;
-  margin-right: 5px; /* Add space after the icon */
+  margin-right: 5px; 
 }
 .interests-icon-title {
   display: flex;
