@@ -1,7 +1,6 @@
 import React from "react";
 import "./App.css";
-import "./index.css"; 
-
+import "./index.css";
 
 function App() {
   return (
@@ -83,9 +82,6 @@ function App() {
             <h3>INTERESTS</h3>
             <ul>
               <li className="interests-icon-title">
-                <i className="fas fa-dumbbell" /> Fitness
-              </li>
-              <li className="interests-icon-title">
                 <i className="fas fa-laptop-code" /> Web application development
               </li>
               <li className="interests-icon-title">
@@ -93,10 +89,13 @@ function App() {
                 development
               </li>
               <li className="interests-icon-title">
-                <i className="fas fa-chess" /> Chess
+                <i className="fas fa-square-root-alt" /> Mathematics
               </li>
               <li className="interests-icon-title">
-                <i className="fas fa-square-root-alt" /> Mathematics
+                <i className="fas fa-dumbbell" /> Fitness
+              </li>
+              <li className="interests-icon-title">
+                <i className="fas fa-chess" /> Chess
               </li>
             </ul>
           </div>
@@ -113,22 +112,24 @@ function App() {
             years, I have also been tutoring university students in Engineering
             Mathematics 1 and Engineering Mathematics 2. For sure, it was my
             love for mathematics that led me to programming. I am constantly
-            motivated to learn new things about software engineering. Also, I
-            enjoy participating in socially useful projects and solving
-            challenging problems. Below are most of the projects I have worked
-            on. The projects are also available on GitHub which you can access
-            by clicking the link in the personal information paragraph.
-            Additionally, you can click on projects down below and you will be
-            redirected to source code of clicked project.
+            motivated to learn new things about software engineering and
+            artificial intelligence. Also, I enjoy participating in socially
+            useful projects and solving challenging problems. Below are most of
+            the projects I have worked on. The projects are also available on
+            GitHub which you can access by clicking the link in the personal
+            information paragraph. For better experience please checkout
+            interactive page by clicking{" "}
+            <a href="https://snazzy-griffin-6f166b.netlify.app/">HERE.</a>
           </p>
           <h2>
             <i className="fas fa-graduation-cap" /> EDUCATION AND QUALIFICATIONS
           </h2>
           <p style={{ textAlign: "justify" }}>
-            Final year student, Faculty of Electrical Engineering, Computing
-            &amp; Informatics, University of Sarajevo, Sarajevo
+            Bachelor of Electrical Engineering, Faculty of Electrical
+            Engineering Sarajevo, Computing &amp; Informatics, University of
+            Sarajevo, Bosnia and Herzegovina
             <br />
-            GPA for final year: 9.5
+            GPA for final year: 9.6
             <br />
             Total GPA: 8.5
           </p>
@@ -162,7 +163,7 @@ function App() {
                 <span className="star">★</span>
                 <span className="star">★</span>
                 <span className="star">★</span>
-                <span className="star empty">★</span>
+                <span className="star">★</span>
                 <span className="star empty">★</span>
               </span>
             </div>
@@ -278,6 +279,16 @@ function App() {
             </div>
             <div className="skill">
               <strong>Unity</strong>{" "}
+              <span className="stars">
+                <span className="star">★</span>
+                <span className="star">★</span>
+                <span className="star">★</span>
+                <span className="star empty">★</span>
+                <span className="star empty">★</span>
+              </span>
+            </div>
+            <div className="skill">
+              <strong>Artificial intelligence</strong>{" "}
               <span className="stars">
                 <span className="star">★</span>
                 <span className="star">★</span>
@@ -456,7 +467,7 @@ function App() {
               <p style={{ textAlign: "justify" }}>
                 Cinema application built using <strong>Java</strong> and{" "}
                 <strong>JavaFX</strong>. It is basic application for cinema
-                which allows users to reserve their tickets, choose theirs seats
+                which allows users to reserve their tickets, choose their seats
                 and see list of all movies currently available. Application also
                 offers other functionalities that cinemas need. For more details
                 feel free to visit my GitHub.
@@ -471,7 +482,7 @@ function App() {
               <h3>Field Logistic Control</h3>
               <p style={{ textAlign: "justify" }}>
                 Complex group project for managing records made by users of
-                application. Projects is divided in to applications, mobile
+                application. Project is divided in to applications, mobile
                 application for users which is built in{" "}
                 <strong>React Native</strong> and web aplication for
                 administrators and superadministrators which is built as a
@@ -479,7 +490,7 @@ function App() {
                 <strong>.NET Web API</strong>. Basically, we have two roles on
                 web application - superadmin and admin. Superadmins are
                 responsible for creating companies and admins for companies,
-                while on other hand admins are responsible for creating
+                while on the other hand admins are responsible for creating
                 campaings for companies and locations for campaigns.
                 Additionally, admins can create users and assign them to
                 campaigns. User can accept that assignment and make record about
@@ -491,15 +502,12 @@ function App() {
             <div
               className="project"
               onClick={() => {
-                window.open(
-                  "https://github.com/tvelic1/CV-Maker",
-                  "_blank"
-                );
+                window.open("https://github.com/tvelic1/CV-Maker", "_blank");
               }}
             >
               <h3>CV Maker</h3>
               <p style={{ textAlign: "justify" }}>
-                Since it is hard to find very good CV maker which is free, I
+                Since it is hard to find very good CV maker that is free, I
                 decided to make my own CV maker so I do not have to pay
                 everytime for good quality CV. This CV is made using my own CV
                 maker application. I used <strong>Node.js</strong> for backend

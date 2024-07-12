@@ -5,12 +5,12 @@ const puppeteer = require("puppeteer");
 const path = require("path");
 
 const app = express();
-const port = 3000;
+const port = 4000;
 
-app.use(express.static(path.join(__dirname, "../build")));
+app.use(express.static(path.join(__dirname, "../public")));
 
 app.get("/", (req, res) => {
-  res.sendFile(path.join(__dirname, "../build", "index.html"));
+  res.sendFile(path.join(__dirname, "../public", "index.html"));
 });
 
 const generatePDF = async () => {
@@ -20,12 +20,12 @@ const generatePDF = async () => {
   });
   const page = await browser.newPage();
 
-  const url = `http://localhost:${port}`;
+  const url = `http://localhost:3000`;
 
   try {
     await page.goto(url, { waitUntil: "networkidle2", timeout: 60000 });
 
-    const pdfPath = path.join(__dirname, "yourName.pdf");
+    const pdfPath = path.join(__dirname, "Tarik_Velic_CV.pdf");
 
     await page.pdf({
       path: pdfPath,
