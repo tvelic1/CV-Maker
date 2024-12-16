@@ -13,6 +13,55 @@ body {
   padding: 40px;
   min-height: 100vh;
 }
+.experience-section {
+  margin-top: 20px;
+}
+
+.experience-section h3 {
+  font-size: 18px;
+  color: #2c3e50;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.experience-section h3 span {
+  font-weight: normal;
+  font-size: 16px;
+  color: #7f8c8d;
+}
+
+.experience-section p {
+  font-size: 14px;
+  color: #101011;
+  margin-top: 5px;
+  line-height: 1.6;
+  text-align: justify;
+}
+
+.experience-dates {
+  font-size: 13px;
+  color: #34495e;
+  font-style: italic;
+}
+
+.experience-section h3 i {
+  margin-right: 8px;
+  color: #2c3e50;
+}
+
+.experience-item {
+  margin-bottom: 20px;
+  padding: 15px;
+  background-color: #ecf0f1;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+  border-left: 4px solid #2980b9;
+}
+
+.experience-item:hover {
+  transform: scale(1.03);
+  background-color: #dce6f0;
+}
 
 .container {
   display: flex;

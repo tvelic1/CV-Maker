@@ -25,7 +25,7 @@ const generatePDF = async () => {
   try {
     await page.goto(url, { waitUntil: "networkidle2", timeout: 60000 });
 
-    const pdfPath = path.join(__dirname, "Tarik_Velic_CV.pdf");
+    const pdfPath = path.join(__dirname, "Tarik_Velic_BSc_CV.pdf");
 
     await page.pdf({
       path: pdfPath,

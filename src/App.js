@@ -62,7 +62,7 @@ function App() {
                 href="https://github.com/tvelic1"
                 target="_blank"
               >
-                Checkout my GitHub
+                tvelic1
               </a>
             </p>
             <p className="icon-title">
@@ -103,13 +103,17 @@ function App() {
         <div className="main-content">
           <h1>Tarik Velić</h1>
           <p style={{ textAlign: "justify" }}>
-            As a final year student I had an opportunity to build applications
-            in numerous programming languages. Although I possess many skills
-            which are necessary for various parts of software development, I can
-            say that my greatest strength is frontend development, particularly
-            ReactJS. Additionally, I have been tutoring elementary and high
-            school students in mathematics for four years, and for the last two
-            years, I have also been tutoring university students in Engineering
+            As a BSc in Computer Science I had an opportunity to build
+            applications in numerous programming languages. Although I possess
+            many skills which are necessary for various parts of software
+            development, I can say that my greatest strength is frontend
+            development, particularly ReactJS library. I have also earned
+            certificates for completing courses in ReactJS, React Native, and
+            Node.js. While I have a preference for frontend development, I also
+            have experience and proficiency in backend development.
+            Additionally, I have been tutoring elementary and high school
+            students in mathematics for four years, and for the last two years,
+            I have also been tutoring university students in Engineering
             Mathematics 1 and Engineering Mathematics 2. For sure, it was my
             love for mathematics that led me to programming. I am constantly
             motivated to learn new things about software engineering and
@@ -119,19 +123,83 @@ function App() {
             GitHub which you can access by clicking the link in the personal
             information paragraph. For better experience please checkout
             interactive page by clicking{" "}
-            <a href="https://snazzy-griffin-6f166b.netlify.app/">HERE.</a>
+            <a href="https://tarikvelic.netlify.app/">HERE.</a>
           </p>
+          <div className="experience-section">
+            <h2>
+              <i className="fas fa-briefcase" /> EXPERIENCE
+            </h2>
+
+            <div className="experience-item">
+              <h3>
+                <i className="fas fa-laptop" /> Full Stack Developer Intern{" "}
+                <span>– ZIRA d.o.o., Sarajevo</span>
+              </h3>
+              <p className="experience-dates">September 2024 – Present</p>
+              <p>
+                I am currently completing a software engineering internship at
+                <strong> ZIRA</strong>, a software company where I am gaining
+                valuable experience in web development. I am working on projects
+                that strengthen my knowledge in <strong>Java - Spring</strong>{" "}
+                and <strong>Angular</strong>, providing me with hands-on
+                experience in building real-world applications.
+              </p>
+            </div>
+
+            <div className="experience-item">
+              <h3>
+                <i className="fas fa-chalkboard-teacher" /> Teaching Assistant
+                (Demonstrator){" "}
+                <span>
+                  – Faculty of Electrical Engineering, University of Sarajevo,
+                  Data Science and Artificial Intelligence
+                </span>
+              </h3>
+              <p className="experience-dates">October 2024 – Present</p>
+              <p>
+                I serve as a demonstrator for two courses:{" "}
+                <strong>Programming in Python</strong> and{" "}
+                <strong>Fundamental Concepts of Artificial Intelligence</strong>{" "}
+                for the Data Science and AI (DSAI) program. My responsibilities
+                include assisting students with programming tasks, organizing
+                lab sessions, and providing support during lectures.
+              </p>
+            </div>
+            <div className="experience-item">
+              <h3>
+              <i class="fa-solid fa-school"></i> Teacher{" "}
+                <span>
+                  High School for the Blind and Visually Impaired, Sarajevo
+                </span>
+              </h3>
+              <p className="experience-dates">September 2024 – November 2024</p>
+              <p>
+                I was teaching five subjects: Telephony Practicum,
+                Telecommunications Traffic, Telecommunications Law, Fundamentals
+                of Telecommunications and Communication and Information
+                Technology Practicum.
+              </p>
+            </div>
+          </div>
+
           <h2>
             <i className="fas fa-graduation-cap" /> EDUCATION AND QUALIFICATIONS
           </h2>
-          <p style={{ textAlign: "justify" }}>
-            Bachelor of Electrical Engineering, Faculty of Electrical
-            Engineering Sarajevo, Computing &amp; Informatics, University of
-            Sarajevo, Bosnia and Herzegovina
+          <p
+            style={{
+              textAlign: "justify",
+              lineHeight: "1.6",
+              marginBottom: "10px",
+            }}
+          >
+            <strong>Bachelor of Electrical Engineering</strong>
             <br />
-            GPA for final year: 9.6
-            <br />
-            Total GPA: 8.5
+            Faculty of Electrical Engineering Sarajevo&nbsp;–&nbsp;
+            <em>Computer Science &amp; Informatics, University of Sarajevo</em>
+          </p>
+          <p style={{ textAlign: "justify", marginTop: "10px" }}>
+            <strong>GPA for final year:</strong> 9.6 <br />
+            <strong>Total GPA:</strong> 8.5
           </p>
           <h2>
             <i className="fas fa-lightbulb" /> SKILLS
@@ -173,7 +241,7 @@ function App() {
                 <span className="star">★</span>
                 <span className="star">★</span>
                 <span className="star">★</span>
-                <span className="star empty">★</span>
+                <span className="star">★</span>
                 <span className="star empty">★</span>
               </span>
             </div>
@@ -248,6 +316,16 @@ function App() {
               </span>
             </div>
             <div className="skill">
+              <strong>Angular</strong>{" "}
+              <span className="stars">
+                <span className="star">★</span>
+                <span className="star">★</span>
+                <span className="star">★</span>
+                <span className="star empty">★</span>
+                <span className="star empty">★</span>
+              </span>
+            </div>
+            <div className="skill">
               <strong>Testing (White Box + Black Box)</strong>{" "}
               <span className="stars">
                 <span className="star">★</span>
@@ -289,26 +367,6 @@ function App() {
             </div>
             <div className="skill">
               <strong>Artificial intelligence</strong>{" "}
-              <span className="stars">
-                <span className="star">★</span>
-                <span className="star">★</span>
-                <span className="star">★</span>
-                <span className="star empty">★</span>
-                <span className="star empty">★</span>
-              </span>
-            </div>
-            <div className="skill">
-              <strong>AutoCAD - Lisp</strong>{" "}
-              <span className="stars">
-                <span className="star">★</span>
-                <span className="star">★</span>
-                <span className="star">★</span>
-                <span className="star empty">★</span>
-                <span className="star empty">★</span>
-              </span>
-            </div>
-            <div className="skill">
-              <strong>Mathlab, Scilab</strong>{" "}
               <span className="stars">
                 <span className="star">★</span>
                 <span className="star">★</span>
@@ -399,7 +457,7 @@ function App() {
               </p>
             </div>
             <div
-              className="project1"
+              className="project"
               onClick={() => {
                 window.open(
                   "https://drive.google.com/drive/u/0/folders/1AXrMS55EDE3ZxxQM5dgSaTSLWT7n1SmC",
@@ -412,7 +470,7 @@ function App() {
                 This project was created as a part of group project for the
                 subject of Electrical Engineering Sarajevo. It was built using{" "}
                 <strong>Unity</strong>, <strong>Vuforia</strong> library and{" "}
-                <strong>C#</strong>. It offers visualizations of physical
+                <strong>C#</strong>. It offers visualizations of physics
                 problems for elementary and high school students. Shapes and
                 models were created using <strong>Blender</strong>.
               </p>
@@ -428,7 +486,7 @@ function App() {
             >
               <h3>Black box Testing</h3>
               <p style={{ textAlign: "justify" }}>
-                Test automation using <strong>SeleniumIDE</strong>,{" "}
+                Test automation using <strong>Selenium IDE</strong>,{" "}
                 <strong>NUnit Selenium</strong> automation framework, load and
                 stress testing using <strong>Loadster</strong>, API testing
                 using <strong>Postman</strong>. This was part of individual
@@ -449,7 +507,7 @@ function App() {
                 I was testing units of application built by my colleagues, also
                 as a part of individual faculty project. In general, unit
                 testing is something that I always do, for all my projects,
-                because I want to imporove my QA skills.{" "}
+                because I want to improve my QA skills.{" "}
                 <strong>Testing Library</strong> and <strong>Jest</strong> were
                 used most of the time.
               </p>
@@ -482,17 +540,17 @@ function App() {
               <h3>Field Logistic Control</h3>
               <p style={{ textAlign: "justify" }}>
                 Complex group project for managing records made by users of
-                application. Project is divided in to applications, mobile
+                application. Project is divided in two applications, mobile
                 application for users which is built in{" "}
-                <strong>React Native</strong> and web aplication for
+                <strong>React Native</strong> and web application for
                 administrators and superadministrators which is built as a
                 combination of <strong>ReactJS</strong> and{" "}
                 <strong>.NET Web API</strong>. Basically, we have two roles on
                 web application - superadmin and admin. Superadmins are
                 responsible for creating companies and admins for companies,
                 while on the other hand admins are responsible for creating
-                campaings for companies and locations for campaigns.
-                Additionally, admins can create users and assign them to
+                campaigns for companies and locations for campaigns.
+                Additionally, admins can create users and assign them two
                 campaigns. User can accept that assignment and make record about
                 his location. Location will be displayed on Maps via Google Maps
                 API, also OCR is possibility for making records. More details
@@ -508,11 +566,13 @@ function App() {
               <h3>CV Maker</h3>
               <p style={{ textAlign: "justify" }}>
                 Since it is hard to find very good CV maker that is free, I
-                decided to make my own CV maker so I do not have to pay
-                everytime for good quality CV. This CV is made using my own CV
-                maker application. I used <strong>Node.js</strong> for backend
-                and exporting data to PDF. <strong>ReactJS</strong> is used for
-                frontend.
+                decided to make my own CV maker so I do not have to pay every
+                time for good quality CV. This CV is made using my own CV maker
+                application. I used <strong>Node.js</strong> for backend and
+                exporting data to PDF. <strong>ReactJS</strong> is used for
+                frontend. This CV maker will be public soon, so anyone can make
+                its own CV. Users will be able to choose which of the given
+                designs they want to use.
               </p>
             </div>
             <div
@@ -524,11 +584,11 @@ function App() {
                 );
               }}
             >
-              <h3>Dijkstra algorithm experimental evaluation</h3>
+              <h3>Dijkstra's algorithm experimental evaluation</h3>
               <p style={{ textAlign: "justify" }}>
                 For my final thesis at Faculty of Electrical Engineering
                 Sarajevo, I had to research about various implementations of
-                Dijsktra algorithm, because I wanted to compare performances of
+                Dijkstra algorithm, because I wanted to compare performances of
                 various ways of implementation. Through this project I got
                 familiar with new data structures such as Fibonacci heaps and
                 buckets and I implemented algorithm on two different ways in{" "}
@@ -536,7 +596,7 @@ function App() {
               </p>
             </div>
             <div
-              className="project"
+              className="project1"
               onClick={() => {
                 window.open(
                   "https://github.com/tvelic1/movies-tvshows",
@@ -547,11 +607,11 @@ function App() {
               <h3>Movies and TV shows</h3>
               <p style={{ textAlign: "justify" }}>
                 Application built using <strong>TypeScript</strong> and{" "}
-                <strong>ReactJS</strong> offers functionalities like soritng by
+                <strong>ReactJS</strong> offers functionalities like sorting by
                 many criteria, recommending, filtering, watching trailers,
                 viewing overviews and comments from other users. It allows user
                 to have insight in all necessary details from which user can
-                decide is movie or TV show worth watching. Those details are:
+                decide whether a movie or TV show is worth watching. Those details are:
                 vote count, average grade and other real data. Those are only
                 some of functionalities which application offers. It is deployed
                 on <strong>Netlify</strong> so you can check it out - you can
@@ -568,6 +628,29 @@ function App() {
                 >
                   HERE.
                 </a>
+              </p>
+            </div>
+            <div
+              className="project"
+              onClick={() => {
+                window.open("https://github.com/tvelic1/medic_web", "_blank");
+              }}
+            >
+              <h3>MedicLab</h3>
+              <p style={{ textAlign: "justify" }}>
+                Full Stack application built for a clinic in order to manage
+                patients and optimize their experience. App is built using{" "}
+                <strong>React - TypeScript</strong> for frontend and{" "}
+                <strong>Node.js</strong> for backend. Admins of lab (doctors)
+                can access the web application where they have insight into
+                details about patients and their needs. Additionally, doctors
+                can register, update, block or delete patients. On the other
+                hand, patients have access to a mobile app that is built using{" "}
+                <strong>React Native</strong>. Patients can notify doctors
+                (admins) about their condition or potential problem, so they can
+                schedule an appointment. Data is stored in{" "}
+                <strong>PostgreSQL</strong> database and app is deployed on{" "}
+                <strong>Vercel</strong>.
               </p>
             </div>
           </div>
